@@ -111,3 +111,7 @@ Required variables (see `.env.example`):
 - `COMPOSE_PROJECT_NAME`: Docker Compose project name
 
 MongoDB variables exist in `.env.example` but no MongoDB service is currently defined in `compose.yml`.
+
+### Instructions
+
+When asked to save output in markdown save to a folder named docs.

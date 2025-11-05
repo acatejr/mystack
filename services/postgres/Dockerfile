@@ -19,3 +19,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ADD ./init-scripts/001-init-extensions.sql /docker-entrypoint-initdb.d/
+ADD ./init-scripts/002-init-n8n-db.sql /docker-entrypoint-initdb.d/
