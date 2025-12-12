@@ -38,7 +38,7 @@ services:
       - N8N_GIT_NODE_DISABLE_BARE_REPOS=true
       - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
       - WEBHOOK_URL=${N8N_WEBHOOK_URL:-http://localhost:5678/}
-      - GENERIC_TIMEZONE=${TIMEZONE:-America/New_York}
+      - GENERIC_TIMEZONE=${TIMEZONE:-America/Phoenix}
     ports:
       - "${N8N_PORT:-5678}:5678"
     volumes:
