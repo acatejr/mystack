@@ -32,11 +32,13 @@ services:
       - DB_POSTGRESDB_USER=${N8N_DB_USER}
       - DB_POSTGRESDB_PASSWORD=${N8N_DB_PASSWORD}
       - N8N_HOST=${N8N_HOST:-localhost}
-      - N8M_RUNNERS_ENABLED=true
+      - N8N_RUNNERS_ENABLED=true
       - N8N_PORT=5678
       - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
       - N8N_GIT_NODE_DISABLE_BARE_REPOS=true
       - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_SECURE_COOKIE=false
       - WEBHOOK_URL=${N8N_WEBHOOK_URL:-http://localhost:5678/}
       - GENERIC_TIMEZONE=${TIMEZONE:-America/Phoenix}
     ports:
